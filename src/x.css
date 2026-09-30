@@ -642,11 +642,15 @@ body.entered .contact {
 }
 .banner-grid,
 .bot-grid,
-.logo-grid {
+.logo-grid,
+.gfx-grid {
   display: grid;
   gap: 20px;
 }
 .banner-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.gfx-grid {
   grid-template-columns: repeat(3, 1fr);
 }
 .logo-grid {
@@ -698,6 +702,9 @@ body.entered .contact {
 }
 .bot-card img {
   aspect-ratio: 16/9;
+}
+.gfx-card img {
+  aspect-ratio: 4/3;
 }
 .banner-empty {
   margin: 42px 0 0;
@@ -918,7 +925,8 @@ body.entered .contact {
   }
   .banner-grid,
   .bot-grid,
-  .logo-grid {
+  .logo-grid,
+  .gfx-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -983,7 +991,8 @@ body.entered .contact {
   }
   .banner-grid,
   .bot-grid,
-  .logo-grid {
+  .logo-grid,
+  .gfx-grid {
     grid-template-columns: 1fr;
     gap: 14px;
   }
